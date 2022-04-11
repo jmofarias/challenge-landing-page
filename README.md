@@ -25,4 +25,5 @@ Este projeto foi desenvolvido com as tecnologias a seguir:
 
 ## :rocket: Visualização do desafio
 
-> https://jmofarias.github.io/desafio-landing-page-mesha/
+- Live server ou executando o arquivo:
+  > index.html
