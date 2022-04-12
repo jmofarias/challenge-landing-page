@@ -1,5 +1,9 @@
+/* Deteccao o estado do botao, usando o DOM (manipulando meu html e css) */
+/* Manipulacao da barra da nav-bar, botao, animacoes*/
+
 jQuery(document).ready(function ($) {
 
+  /* Cabeçalho fixo e botão Voltar ao topo */
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -16,8 +20,10 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
+  /* Inicia wowjs */
   new WOW().init();
 
+  /* Menu de navegacao*/
   $('.nav-menu').superfish({
     animation: {
       opacity: 'show'
@@ -25,6 +31,7 @@ jQuery(document).ready(function ($) {
     speed: 400
   });
 
+  /* Navegacao mobile */
   if ($('#nav-menu-container').length) {
     var $mobile_nav = $('#nav-menu-container').clone().prop({
       id: 'mobile-nav'
@@ -64,6 +71,7 @@ jQuery(document).ready(function ($) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
+  /* Rolagem suave nos links de hash da pagina */
   $('a[href*="#"]:not([href="#"])').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 
@@ -98,7 +106,7 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  $("#portfolio-flters li").click(function () {
+/*   $("#portfolio-flters li").click(function () {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
@@ -111,7 +119,7 @@ jQuery(document).ready(function ($) {
       $(selectedFilter).fadeIn(100).css('transform', 'scale(1)');
       $("#portfolio-wrapper").fadeTo(300, 1);
     }, 300);
-  });
+  }); */
 
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
