@@ -25,5 +25,8 @@ Este projeto foi desenvolvido com as tecnologias a seguir:
 
 ## :rocket: Visualização do desafio
 
+- GitHub pages:
+  > https://jmofarias.github.io/challenge-landing-page/
+
 - Live server ou executando o arquivo:
   > index.html
